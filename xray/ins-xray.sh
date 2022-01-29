@@ -75,13 +75,13 @@ cat > /etc/xray/config.json << END
   },
   "inbounds": [
     {
-      "port": 8443,
+      "port": 1443,
       "protocol": "vmess",
       "settings": {
         "clients": [
           {
             "id": "${uuid1}",
-            "alterId": 32
+            "alterId": 0
 #xray-vmess-tls
           }
         ]
@@ -117,7 +117,7 @@ cat > /etc/xray/config.json << END
 
           {
             "id": "${uuid2}",
-            "alterId": 32
+            "alterId": 0
 #xray-vmess-nontls
           }
         ]
@@ -146,7 +146,7 @@ cat > /etc/xray/config.json << END
       }
     },
     {
-      "port": 8443,
+      "port": 1443,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -357,8 +357,8 @@ END
 
 # // Enable & Start Service
 # Accept port Xray
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 1443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 1443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2083 -j ACCEPT
