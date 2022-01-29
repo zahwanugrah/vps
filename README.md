@@ -1,7 +1,7 @@
 ### Command Install
 
 ```
-rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-get update -y && apt-get upgrade && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
+rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-get update -y && apt-get upgrade && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/zeaking/vps/master/setup.sh && chmod +x setup.sh && screen -S setup ./setup.sh
 ```
 
 ### Fitur Script
@@ -71,11 +71,11 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 
 • SS-OBFS HTTP            : 3443-3543
 
-• XRAYS Vmess TLS         : 8443
+• XRAYS Vmess TLS         : 1443
 
 • XRAYS Vmess None TLS    : 80
 
-• XRAYS Vless TLS         : 8443
+• XRAYS Vless TLS         : 1443
 
 • XRAYS Vless None TLS    : 80
 
@@ -119,4 +119,4 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 
 ### Contact To Buy The Script
 
-• https://t.me/Akbar218
+• https://t.me/zeaking5
