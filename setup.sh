@@ -43,7 +43,7 @@ akbarvpnnnnnnnnnn="raw.githubusercontent.com/zeaking/vps/master/ohp"
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/zeaking/vps/master/ip.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/zeaking/izin/main/ip.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
