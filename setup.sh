@@ -20,38 +20,36 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/ssh"
+akbarvpn="raw.githubusercontent.com/zeaking/vps/master/ssh"
 # Link Hosting Kalian Untuk Sstp
-akbarvpnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/sstp"
+akbarvpnn="raw.githubusercontent.com/zeaking/vps/master/sstp"
 # Link Hosting Kalian Untuk Ssr
-akbarvpnnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/ssr"
+akbarvpnnn="raw.githubusercontent.com/zeaking/vps/master/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-akbarvpnnnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/shadowsocks"
+akbarvpnnnn="raw.githubusercontent.com/zeaking/vps/master/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-akbarvpnnnnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/wireguard"
+akbarvpnnnnn="raw.githubusercontent.com/zeaking/vps/master/wireguard"
 # Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/xray"
+akbarvpnnnnnn="raw.githubusercontent.com/zeaking/vps/master/xray"
 # Link Hosting Kalian Untuk Ipsec
-akbarvpnnnnnnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/ipsec"
+akbarvpnnnnnnn="raw.githubusercontent.com/zeaking/vps/master/ipsec"
 # Link Hosting Kalian Untuk Backup
-akbarvpnnnnnnnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/backup"
+akbarvpnnnnnnnn="raw.githubusercontent.com/zeaking/vps/master/backup"
 # Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/websocket"
+akbarvpnnnnnnnnn="raw.githubusercontent.com/zeaking/vps/master/websocket"
 # Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/ohp"
+akbarvpnnnnnnnnnn="raw.githubusercontent.com/zeaking/vps/master/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(wget -qO- ipinfo.io/ip);
+IZIN=$( curl https://raw.githubusercontent.com/zeaking/izin/main/ip.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/lis.tio.718"
-echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/zeaking5"
 exit 0
 fi
 rm -f setup.sh
@@ -113,7 +111,7 @@ echo "1.2" > /home/ver
 echo " "
 echo "Installation has been completed!!"
 echo " "
-echo "=================================-Akbar Maulana Project-===========================" | tee -a log-install.txt
+echo "=================================-ZEAKING STORE PROJECT-===========================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "----------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
