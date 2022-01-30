@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/zeaking/izin/main/ip.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/zeaking/vps/master/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -23,7 +23,7 @@ echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/zeaking5"
 exit 0
 fi
-#Optimasi Speed By Akbar Maulana
+#Optimasi Speed By ZEAKING STORE
 Add_To_New_Line(){
 	if [ "$(tail -n1 $1 | wc -l)" == "0"  ];then
 		echo "" >> "$1"
