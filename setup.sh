@@ -44,7 +44,7 @@ akbarvpnnnnnnnnnn="raw.githubusercontent.com/zeaking/vps/master/ohp"
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/zeaking/izin/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/zeaking/vps/master/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -166,7 +166,7 @@ echo "   - Telegram                : T.me/Akbar218"  | tee -a log-install.txt
 echo "   - Instagram               : ~"  | tee -a log-install.txt
 echo "   - Whatsapp                : 081545854516"  | tee -a log-install.txt
 echo "   - Facebook                : https://m.facebook.com/lis.tio.718" | tee -a log-install.txt
-echo "----------------------Script Created By Akbar Maulana Project----------------------" | tee -a log-install.txt
+echo "----------------------Script Created By ZEAKING STORE PROJECT----------------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 15 Sec"
 sleep 15
