@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/zeaking/izin/main/ip.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/zeaking/vps/master/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -73,4 +73,4 @@ echo -e "Link TLS    : ${xrayvless1}"
 echo -e "========================="
 echo -e "Link No TLS : ${xrayvless2}"
 echo -e "========================="
-echo -e "Script By Akbar Maulana"
+echo -e "Script By ZEAKING STORE"
