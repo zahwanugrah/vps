@@ -15,27 +15,19 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/zeaking/vps/master/ipvps.txt | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/zeaking5"
-exit 0
-fi
+
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/zeaking/vps/master/ssh"
+akbarvpn="raw.githubusercontent.com/zahwanugrah/vps/master/ssh"
 
 # Link Hosting Kalian Untuk Xray
-akbarvpnn="raw.githubusercontent.com/zeaking/vps/master/xray"
+akbarvpnn="raw.githubusercontent.com/zahwanugrah/vps/master/xray"
 
 # Link Hosting Kalian Untuk Trojan Go
-akbarvpnnn="raw.githubusercontent.com/zeaking/vps/master/trojango"
+akbarvpnnn="raw.githubusercontent.com/zahwanugrah/vps/master/trojango"
 
 # Link Hosting Kalian Untuk Stunnel5
-akbarvpnnnn="raw.githubusercontent.com/zeaking/vps/master/stunnel5"
+akbarvpnnnn="raw.githubusercontent.com/zahwanugrah/vps/master/stunnel5"
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
@@ -375,7 +367,7 @@ echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 # Install BBR
-wget https://${akbarvpn}/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+#wget https://${akbarvpn}/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # Ganti Banner
 wget -O /etc/issue.net "https://${akbarvpn}/issue.net"
