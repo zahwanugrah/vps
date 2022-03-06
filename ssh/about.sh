@@ -2,7 +2,7 @@
 
 clear
 echo -e "================================================="
-echo -e "#     Premium Auto Script By ZEAKING STORE      #"
+echo -e "#       Premium Auto Script                     #"
 echo -e "================================================="
 echo -e "# For Debian 10 64 bit                          #"
 echo -e "# For Ubuntu 18.04 & Ubuntu 20.04 64 bit        #"
